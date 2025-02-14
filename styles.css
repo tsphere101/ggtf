@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1D1616;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+/*     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c83c004e-1370-4756-88e5-4071de797088/ddqf9ds-ec56e0b3-bd28-4d2c-abeb-c64763f53fcc.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M4M2MwMDRlLTEzNzAtNDc1Ni04OGU1LTQwNzFkZTc5NzA4OFwvZGRxZjlkcy1lYzU2ZTBiMy1iZDI4LTRkMmMtYWJlYi1jNjQ3NjNmNTNmY2MuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AaN7CK2wk3CFtA6ND6NFgialoaDibWljm2KDntNnOb4 */
+/* ');  */
+    background-size: cover; /* or 'contain', 'auto', '100% 100%', etc. */
+    background-repeat: no-repeat; /* or 'repeat', 'repeat-x', 'repeat-y' */
+    /* background-position: center center;  Optional: to center the image */
+}
+
+header {
+    background-color: #D84040;
+    color: #fefefe;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#kuromi {
+    width:100px;
+    height:100px;
+}
+
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6f61; /* Default color */
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall 3s forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+
+buton {
+    background-color: #D84040;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.celebrate-buton {
+    margin-top: 20px;
+}
+
+.plant-pot {
+    display:flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.rose-1 {
+    height: 50px;
+}
+
+.rose-2 {
+    transform: scaleX(-1);
+    height: 80px;
+}
+
