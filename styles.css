@@ -54,7 +54,8 @@ footer {
     justify-content: center;
 }
 
-#kuromi {
+#rabbit {
+    margin-top: 40px;
     width:100px;
     height:100px;
 }
@@ -89,7 +90,8 @@ buton {
 }
 
 .celebrate-buton {
-    margin-top: 20px;
+    margin-top: 180px;
+
 }
 
 .plant-pot {
@@ -107,3 +109,33 @@ buton {
     height: 80px;
 }
 
+#main-rose-div {
+  position: fixed; /* Fixed position relative to the viewport */
+  bottom: 0; /* Start at the bottom of the screen */
+  left: 50%; /* Horizontally centered */
+  transform: translateX(-50%); /* Adjust horizontal centering */
+  opacity: 0; /* Initially hidden */
+}
+
+#main-rose {
+  display: hidden; 
+  max-width: 200px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Define the slide-up animation */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) translateX(-50%); /* Start from bottom, horizontally centered */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(-50%); /* Stop at the vertical center, horizontally centered */
+  }
+}
+
+/* Class to trigger the animation */
+.slide-up-animation {
+  animation: slideUp 1s forwards; /* Animation name, duration, and keep final state */
+}
